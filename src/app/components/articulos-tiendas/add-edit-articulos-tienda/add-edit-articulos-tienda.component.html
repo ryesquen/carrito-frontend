@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>Ingresar Artículo por Tienda</h1>
+<div mat-dialog-content>
+  <form [formGroup]="form" class="articulo-tienda-form">
+    <mat-form-field>
+      <mat-label>Tiendas</mat-label>
+      <mat-select formControlName="tienda">
+        <mat-option value=''>Seleccione Tienda</mat-option>
+        <mat-option *ngFor="let item of tiendas" [value]="item.id">
+          {{item.sucursal}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Artículos</mat-label>
+      <mat-select formControlName="articulo">
+        <mat-option value=''>Seleccione Artículo</mat-option>
+        <mat-option *ngFor="let item of articulos" [value]="item.id">
+          {{item.codigo}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button [disabled]="this.form.invalid" (click)="add()" mat-raised-button color="primary">Guardar</button>
+  <button mat-raised-button color="warn" mat-dialog-close>Cancelar</button>
+</div>

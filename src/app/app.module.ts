@@ -11,11 +11,17 @@ import { ClienteModule } from './components/cliente/cliente.module';
 import { MaterialModule } from 'src/material.module';
 import { LoginComponent } from './identity/login/login.component';
 import { TiendaModule } from './components/tienda/tienda.module';
+import { ArticulosTiendasComponent } from './components/articulos-tiendas/articulos-tiendas.component';
+import { ArticulosTiendasModule } from './components/articulos-tiendas/articulos-tiendas.module';
+import { ClientesArticuloComponent } from './components/clientes-articulo/clientes-articulo.component';
+import { ClientesArticuloModule } from './components/clientes-articulo/clientes-articulo.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    ArticulosTiendasComponent,
+    ClientesArticuloComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +29,8 @@ import { TiendaModule } from './components/tienda/tienda.module';
     ArticuloModule,
     ClienteModule,
     TiendaModule,
+    ArticulosTiendasModule,
+    ClientesArticuloModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,

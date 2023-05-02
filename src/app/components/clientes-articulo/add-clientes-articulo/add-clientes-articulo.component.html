@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>Ingresar Cliente - Artículo</h1>
+<div mat-dialog-content>
+  <form [formGroup]="form" class="articulo-tienda-form">
+    <mat-form-field>
+      <mat-label>Tiendas</mat-label>
+      <mat-select formControlName="cliente">
+        <mat-option value=''>Seleccione Cliente</mat-option>
+        <mat-option *ngFor="let item of clientes" [value]="item.id">
+          {{item.nombre}} - {{item.apellido}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Artículos</mat-label>
+      <mat-select formControlName="articulo">
+        <mat-option value=''>Seleccione Artículo</mat-option>
+        <mat-option *ngFor="let item of articulos" [value]="item.id">
+          {{item.codigo}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button [disabled]="this.form.invalid" (click)="add()" mat-raised-button color="primary">Guardar</button>
+  <button mat-raised-button color="warn" mat-dialog-close>Cancelar</button>
+</div>

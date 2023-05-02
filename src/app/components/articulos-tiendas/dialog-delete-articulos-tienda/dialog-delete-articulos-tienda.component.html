@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>{{tituloAccion}} Artículo - Tienda</h1>
+<div mat-dialog-content>
+  ¿Desea eliminar la relación: {{data.articuloCodigo}} - {{data.tiendaSucursal}}?
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="eliminar()"
+    color="primary">{{botonAccion}}</button>
+  <button mat-raised-button mat-dialog-close color="warn">Cancelar</button>
+</div>
