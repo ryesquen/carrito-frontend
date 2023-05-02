@@ -1,0 +1,70 @@
+.articulo-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.articulo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.articulo-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.articulo-form input[type="text"],
+.articulo-form input[type="number"],
+.articulo-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.articulo-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.articulo-form button:hover {
+  background-color: #3e8e41;
+}
+table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 16px;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.image-preview {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}

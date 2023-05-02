@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>{{tituloAccion}} Tienda</h1>
+<div mat-dialog-content>
+  <form [formGroup]="form" class="tienda-form">
+    <mat-form-field appearance="fill">
+      <mat-label>Sucursal</mat-label>
+      <input matInput type="text" formControlName="sucursal" autocomplete="false">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Dirección</mat-label>
+      <input matInput type="text" formControlName="direccion">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button [disabled]="this.form.invalid" mat-raised-button (click)="addEdit()"
+    color="primary">{{botonAccion}}</button>
+  <button mat-raised-button mat-dialog-close color="warn">Cancelar</button>
+</div>

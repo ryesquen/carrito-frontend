@@ -1,0 +1,12 @@
+.articulo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-image{
+  margin: 10px 0;
+}
+
+.file-name {
+  margin-left: 1rem;
+}
