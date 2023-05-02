@@ -8,7 +8,7 @@ import { ClientesArticulo } from '../interfaces/cliente-articulo';
 })
 export class ClientesArticuloService {
 
-  private apiUrl = 'https://localhost:44322/api/ClientesArticulo';
+  private apiUrl = 'https://www.restcarrito.somee.com/api/ClientesArticulo';
 
   private http = inject(HttpClient)
 

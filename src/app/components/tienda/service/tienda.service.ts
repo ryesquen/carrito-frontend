@@ -7,7 +7,7 @@ import { Tienda } from '../interfaces/tienda';
   providedIn: 'root'
 })
 export class TiendaService {
-  private apiUrl = 'https://localhost:44322/api/Tienda';
+  private apiUrl = 'https://www.restcarrito.somee.com/api/Tienda';
 
   private http = inject(HttpClient)
 

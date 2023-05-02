@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private apiUrl = 'https://localhost:44322/api/Account/authenticate';
+  private apiUrl = 'https://www.restcarrito.somee.com/api/Account/authenticate';
   private http = inject(HttpClient)
 
   authenticate(request: AuthenticationRequest): Observable<ResponseService<AuthenticationResponse>> {

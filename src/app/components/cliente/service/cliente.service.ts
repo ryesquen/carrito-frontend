@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ClienteService {
-  private apiUrl = 'https://localhost:44322/api/Cliente';
+  private apiUrl = 'https://www.restcarrito.somee.com/api/Cliente';
 
   private http = inject(HttpClient)
 

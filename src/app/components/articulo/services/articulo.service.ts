@@ -7,7 +7,7 @@ import { Articulo } from '../models/articulo';
   providedIn: 'root'
 })
 export class ArticuloService {
-  private apiUrl = 'https://localhost:44322/api/Articulo';
+  private apiUrl = 'https://www.restcarrito.somee.com/api/Articulo';
 
   private http = inject(HttpClient)
 
